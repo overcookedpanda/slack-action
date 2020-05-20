@@ -43,7 +43,7 @@ function getText(status) {
     started = `<http://github.com/${actor}|${actor}>` + ' has *started* the "' + `${workflow}`  + '"' + ' workflow ';
     succeeded = 'The workflow "' + `${workflow}` + '"' + ' was completed *successfully* by ' + `<http://github.com/${actor}|${actor}>`;
     cancelled = ':warning: The workflow "' + `${workflow}` + '"' + ' was *canceled* by ' + `<http://github.com/${actor}|${actor}>`;
-    failure = '<!here> The workflow "' + `${workflow}` + '"' + ' *failed*';
+    failure = 'The workflow "' + `${workflow}` + '"' + ' *failed*';
     
     if (status.toLowerCase() === 'success') {
         return succeeded;
